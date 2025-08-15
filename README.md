@@ -1,13 +1,78 @@
-# React + Vite
+<<<<<<< HEAD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chat 1v1
 
-Currently, two official plugins are available:
+Descripción: Este es un Chat con Websockets, para  comunicacion bidireccional en tiempo real con otros usuarios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+❓¿Qué problema resuelve?
 
-## Expanding the ESLint configuration
+Este proyecto esta enfocado principalmente en la comunicacion en tiempo real, logrando enviar, y ver
+los mensajes que envias y recibis en tiempo real.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Chat-1v1
+🚀 Funcionalidades principales
+
+✅ Registro e inicio de sesión validacion de datos, hasheo de contraseñas, y limite de uso de formulario
+
+🏠 Home con seleccion de conversacion
+
+🧠 POST para enviar mensajes y verlos en tiempo real con WS
+
+⚙️ Tecnologías utilizadas
+
+Frontend:
+
+React.js
+
+Tailwind CSS
+
+React Router
+
+Backend:
+
+Node.js
+
+Express.js
+
+WebSockets "WS" (Comunicacion en tiempo real)
+
+Express-Validator (para validar datos)
+
+RateLimiting (Para evitar muchas peticiones desde un formulario)
+
+MySQL
+
+jsonwebtoken (Tokens JWT)
+
+bcrypt (hash de contraseñas)
+
+CORS (conexión segura entre servidores)
+
+🔐 ¿Cómo funciona el hasheo de contraseñas?
+
+El usuario completa un formulario en React (nombre, email, contraseña).
+
+Se envía la información al backend mediante POST.
+
+En el servidor, la contraseña se encripta usando bcrypt con 10 saltos (salt rounds).
+
+Se guarda en la base de datos solo la contraseña encriptada, jamás la original.
+
+Durante el login, la contraseña ingresada se compara con el hash de la base de datos usando bcrypt.compare.
+
+Una vez Logeado, se crea un token JWT, para poder acceder a todas las rutas
+
+💡 Enfoque del Desarrollador
+
+Programación modular y ordenada.
+
+Pensamiento crítico para debugging eficiente.
+
+Comunicacion en tiempo real con Websockets.
+
+Adaptabilidad a las necesidades reales del usuario.
+
+UI dinámica e intuitiva, animada con Framer Motion.
+
+👨‍💻 Desarrollado por:
+
+AlanBenjaDev - Full Stack Developer
